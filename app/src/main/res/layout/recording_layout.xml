@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:id="@+id/relativelayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowid"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:text="ROWID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIMESTAMP"
+        android:id="@+id/timestamp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/rowid"
+        android:layout_toEndOf="@+id/rowid"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DURATION"
+        android:id="@+id/duration"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/status"
+        android:layout_toEndOf="@+id/status"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USERID"
+        android:id="@+id/userid"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/duration"
+        android:layout_toEndOf="@+id/duration"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="21dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status2"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/timestamp"
+        android:layout_toEndOf="@+id/timestamp"
+        android:clickable="false"
+        android:checked="false"
+        android:enabled="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:layout_alignParentBottom="false"
+        android:layout_toRightOf="@+id/status"
+        android:layout_toEndOf="@+id/timestamp"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>
